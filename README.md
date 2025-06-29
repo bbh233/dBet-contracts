@@ -55,15 +55,13 @@
    npm install
    ```
 2. 部署工厂合约：
-    ```
-    bash
+    ```bash
     npx hardhat run scripts/deploy.js --network sepolia
     ```
     后续测试脚本基于这个工厂合约进行。
 
 3. 运行测试脚本：
-    ```
-    bash
+    ```bash
     npx hardhat run scripts/e2e-test.js --network sepolia
     ```
     提示很清晰，先使用工厂合约创建市场（注意修改合约相关权限，不然无法操作合约）。
