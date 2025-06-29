@@ -1,0 +1,21 @@
+{
+  "name": "dbet-contracts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@chainlink/contracts": "^1.4.0",
+    "@chainlink/functions-toolkit": "^0.3.2",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^4.9.6",
+    "dotenv": "^16.5.0",
+    "hardhat": "^2.24.2",
+    "hardhat-contract-sizer": "^2.10.0"
+  }
+}
