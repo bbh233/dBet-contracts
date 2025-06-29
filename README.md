@@ -53,3 +53,19 @@
 1. 安装依赖：
    ```bash
    npm install
+   ```
+2. 部署工厂合约：
+    ```
+    bash
+    npx hardhat run scripts/deploy.js --network sepolia
+    ```
+    后续测试脚本基于这个工厂合约进行。
+
+3. 运行测试脚本：
+    ```
+    bash
+    npx hardhat run scripts/e2e-test.js --network sepolia
+    ```
+    提示很清晰，先使用工厂合约创建市场（注意修改合约相关权限，不然无法操作合约）。
+    将市场合约手动添加到 Chainlink 测试网的订阅中，实际的产品可以使用自动化操作。
+    写入市场结果到链下服务器上，完成以上操作后，可以回车进行后续操作（测试脚本会在未完成以上步骤时阻塞，直到回车确认完成）。
